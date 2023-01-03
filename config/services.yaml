@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  simoeboe_static_entities.sync_static_entities_command:
+    class: Simoeboe\StaticEntitiesBundle\Command\SyncStaticEntitiesCommand
+    tags: ['console.command']
+    public: true
+    arguments:
+      - !tagged_iterator simoeboe.static_entity_creator

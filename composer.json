@@ -1,0 +1,33 @@
+{
+    "name": "simoeboe/simoeboe-static-entities-bundle",
+    "description": "A bundle to fill and sync entities with non-changeable production data",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Möller-Börkel",
+            "email": "s.moeller-boerkel@posteo.de"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "doctrine/orm": "^2.14",
+        "symfony/config": "^6.2",
+        "symfony/console": "^6.2",
+        "symfony/dependency-injection": "^6.2",
+        "symfony/http-kernel": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Simoeboe\\StaticEntitiesBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Simoeboe\\StaticEntitiesBundle\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^6.2"
+    }
+}
